@@ -245,6 +245,17 @@ def mostra_chat():
 
 def main():
 
+
+    st.markdown(
+        r"""
+        <style>
+        .stDeployButton {
+                visibility: hidden;
+            }
+        </style>
+        """, unsafe_allow_html=True
+    )
+
     assistente = client.beta.assistants.retrieve(assistant_id=ASST_MOR)
     session_config()
 
